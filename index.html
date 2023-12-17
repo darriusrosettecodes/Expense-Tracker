@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Darrius Rosette">
+    <meta name="description" content="An expense tracker application make using HTML, CSS, Javascript">
+
+    <title>Javascript Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    
+    <center>
+        <div class="expense-tracker-body">
+            <div class="balances">
+                <div class="total">
+                    <h3>Total Balance</h3>
+                    <span class="total-num">$0.00</span>
+                </div>
+
+                <div class="different-transactions">
+                    <div class="incomes">
+                        <h3>Income</h3>
+                        <span class="income">+$0.00</span>
+                    </div>
+
+                    <div class="expense">
+                        <h3>Expense</h3>
+                        <span class="expense-num">-$0.00</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="transations">
+                <h2>Transactions</h2>
+                <p></p>
+                <div class="individuals">
+                    
+                </div>
+            </div>
+
+            <div class="add-transactions">
+                <h2>Add Transaction</h2>
+                
+                <div class="transaction-type-buttons">
+                    <button class="expense-btn">Expense</button>
+                    <button class="income-btn">Income</button>
+                </div>
+
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Expense Name">
+                    
+                    <br>
+
+                    <div class="inputs">
+                        <input type="number" name="amount" id="amount" placeholder="Amount">
+                        
+                        <input type="date" name="date" id="date" placeholder="Date">
+                    </div>
+                </form>
+            </div>
+                
+            <button class="submit-btn">Submit</button>
+        </div>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>

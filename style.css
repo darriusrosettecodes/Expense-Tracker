@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.058);
+}
+h1{
+    text-align: center;
+    margin: 30px 0px;
+}
+.expense-tracker-body{
+    border: 5px solid rgba(128, 128, 128, 0.227);
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+   height: max-content;
+   width: 35vw;
+}
+
+/*BALANCES*/
+.expense-tracker-body .balances{
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+.expense-tracker-body .balances .different-transactions{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+}
+span.total-num {
+    font-size: 2.5em;
+}
+span.income, span.expense-num{
+    font-size: 1.5em;
+}
+
+/*TRANSACTIONS*/
+.expense-tracker-body .transations{
+    margin: 10px;
+}
+.expense-tracker-body .transations h2{
+    text-align: left;
+}
+.transations .individual-expense{
+    display: flex;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*ADD TRANSACTIONS*/
+.add-transactions{
+    margin: 10px;
+}
+.add-transactions h2{
+    text-align: left;
+}
+.add-transactions .transaction-type-buttons{
+    background-color: rgba(128, 128, 128, 0.297);
+    padding: 5px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.add-transactions .transaction-type-buttons button{
+    padding: 10px;
+    width: 49%;
+    border-radius: 10px;
+    border: none;
+}
+.add-transactions .transaction-type-buttons .expense-btn{
+    background-color: white;
+}
+.add-transactions .transaction-type-buttons .income-btn{
+    background-color: rgba(128, 128, 128, 0.24);
+}
+.add-transactions #name{
+    width: 100%;
+    margin: 10px 0px;
+    border: 3px solid rgba(128, 128, 128, 0.482);
+    border-radius: 8px;
+    height: 3em;
+}
+.add-transactions .inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-transactions .inputs input{
+    height: 3em;
+    border-radius: 8px;
+    border: 3px solid rgba(128, 128, 128, 0.482);
+    width: 49%;
+}
+.amount{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*BUTTONS*/
+.expense-tracker-body button.submit-btn{
+    height: 3em;
+    margin: 10px 0; 
+    width: calc(100% - 20px);
+    color: white;
+    font-size: 1.2em;
+    background: blue;
+    border-radius: 10px;
+}
+.individual-expense .remove button{
+    color: grey;
+    border: none;
+    background-color: transparent;
+    font-size: .8em;
+}
